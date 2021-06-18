@@ -1,0 +1,82 @@
+@use "~@material/button/button";
+@use "~@material/floating-label/mdc-floating-label";
+@use "~@material/line-ripple/mdc-line-ripple";
+@use "~@material/notched-outline/mdc-notched-outline";
+@use "~@material/textfield";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@include button.styles;
+
+@include textfield.core-styles;
+
+.input{
+    padding: 10px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.input:focus {
+    outline: none !important;
+    border:1px solid #1877f2;
+}
+
+.button-width{
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+hr.solid {
+    border-top: 1px solid #3e4042;
+}
+
+.card-login-style{
+    border-radius: 10px; max-height: 400px; width: 380px;
+}
+
+.input-button-style{
+    border-radius: 5px;
+    border:1px solid #bbb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cover-image{
+    height: 450px;
+    width: 100%;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #000
+}
+
+
+
+.custom-outlined-button {
+    --mdc-theme-primary: #000;
+    --mdc-theme-on-primary: #FFF;
+}
+
+@media only screen and (min-width:0px) and (max-width:770px)
+{
+    .label-hide-on-small {
+        display:none;
+    }
+
+
+}
+
+
